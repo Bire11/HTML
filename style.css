@@ -9,21 +9,118 @@
         margin-bottom: 10px;
         margin-left: 10px;
         color: white;
-        background: rgb(119, 0, 255);
+        background-color: rgb(65, 164, 189);
         font-style: bold;
         font-size: 20px;
     }
+    
     .section{
         border-radius: 10px;
         border: 1px solid rebeccapurple;
         box-shadow: 10px;
+        background-color: aquamarine;
     }
+     /* ul>li{
+        list-style-type: none;
+        color: rebeccapurple;
+        margin: 12px;
+        padding: 12px;
+    
+     } */
+     /*
+     a:hover{
+        color:red;
+        
+     }
+     */
+     /* a:visited{
+        color: blueviolet;
+     } */
+     /*
+     a{
+        text-decoration: none;
+        color: rgb(44, 42, 42);
+        border: 1px solid color;
+        border-radius: 7px;
+        box-shadow: color;
+        padding: 3px;
+        background-color: rgb(140, 163, 156);
+     }
+     */
+     li{
+        display: inline;
+       
+     }
+     li{
+        float: left;
+     }
+     a{
+        display: block;
+        padding: 3px;
+        background-color: #dddddd;
+     }
+     ul{
+        background-color: #dddddd;
+     }
+     ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        
+    }
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    
+}
+li a:hover{
+    background-color: #111;
+}
+.active{
+    background-color: #04AA6D;
+}
+li{
+    border-right: 1px solid #bbb;
+}
+li:last-child{
+    border-right: none;
+}
+ul{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+ul{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+ul{
+   border: 1px solid #e7e7e7;
+   background-color: #f3f3f3;
+
+}
+li a{
+    color: #666;
+}
+ul {
+    position: -webkit-sticky; /* Safari*/
+    position: sticky;
+    top: 0;
+}
+
+
+
     body{
-        background-color: yellow;
-        color: white;
+        background-color: white;
+        color: greenyellow;
     }
     p{
-        color: rgb(0, 255, 149);
+        color: blueviolet;
         font-size: 16px;
         margin: 15px;
         padding: 10px;
