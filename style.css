@@ -3,7 +3,8 @@
       box-sizing: border-box;
       padding: 0;
       margin: 0;
-      box-sizing: border-box;
+      font-family: sans-serif;
+      
       
     
       text-decoration: none;
@@ -13,7 +14,7 @@
         background-color: rgb(22, 21, 21);
         color: rgb(11, 1, 19);
         min-height: 100vh;
-      background: url(..\s.jpg);
+      
         background-size: cover;
         background-position: center;
 
@@ -21,11 +22,14 @@
        
     }
 
-    .header{
+    header{
     
         top: 0; left: 0; right: 0;
-        box-shadow: 0 5px 10px rgb(0, 0, 0,0.1);
-        padding: 0px 7%;
+        box-shadow: 0 5px 10px rgba(151, 41, 41, 0.1);
+        padding: 25px 80px;
+        width: 100%;
+        display: inline-block;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -33,7 +37,7 @@
         margin-bottom: 10px;
         margin-left: 10px;
         color: white;
-        background-color: rgb(65, 164, 189);
+        background-color: #265219;
         font-style: bold;
         font-size: 20px;
     }
@@ -56,11 +60,11 @@
         color:red;
         
      }
-     */
-     /* a:visited{
+    
+     a:visited{
         color: blueviolet;
-     } */
-     /*
+     } 
+     
      a{
         text-decoration: none;
         color: rgb(44, 42, 42);
@@ -135,6 +139,7 @@ label{
     color:#04AA6D
 }
 
+
 .active{
     background-color: #04AA6D;
 }
@@ -144,7 +149,7 @@ li:last-child{
     border-right: none;
 }
 
-.grid-container{
+grid-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
@@ -163,83 +168,19 @@ li:last-child{
     }
 
 
-    /* .container{
-        width: 100%;
+    .container{
+        max-width: 400px;
         height: 100vh;
-        background: #e3f9ff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-    } */
-
-    .calculator{
-        background: #0b0b0c;
-        padding: 20px;
-        border-radius: 10px;
-        
-
-    }
-
-    .calculator form input{
-        border: 0;
-        outline: 0;
-        width: 50px;
-        height: 50px;
-        border-radius: 10px;
-         box-shadow: 4px,4px,30px rgba(245, 245, 247, 0.555);
-         background: transparent;
-         font-size: 35px;
-        color: #fff;
-        cursor: pointer;
-        margin: 10px;
+        margin: 10vh auto 0 auto;
+        box-shadow: 0px 0px 43px 17px rgba(153, 153, 153, 1);
+        background: #455357;
        
-        
-       
-        border-radius: 5px;
-        color: #fff;
-        border: 1px solid #3d3a3a;
-
-
-        
-    }
-/*
-    form .display{
-        display: flex;
-        justify-content: flex-end;
-        margin: 20px 0;   
-       background: #f3f0f0;
-    }
-
-    form .display input{
-        text-align: right;
-        flex: 1;
-        font-size: 45px;
-        box-shadow: none;
-        color: #fff;
-    }
-   form input.equal{
-        width: 145px;
-        color: #8091f0;
-
-    }
-     form input.on{
-        color: #18e99c;
-     }
-     form input.operator{
-        color: #8091f0
-     }
-     */
+  
      
-#menu-bar{
-    display: none;
-}
-header label{
-    font-size: 20px;
-    color: #333;
-    cursor: pointer;
-    display: none;
-}
+    
+    } 
+
+    
 /*
     
      @media (max-width:991px){
@@ -276,6 +217,13 @@ header label{
         }
     }*/
    
+  
+
+
+
+
+
+   /*
     @media (300px <= width <=780px ){
         body{
             background: rgba(148, 243, 7, 0.068);
@@ -285,5 +233,50 @@ header label{
         border: 1px solid black;
         background: white;
     }
+*/
+.calculator {
+    margin: 20px auto;
+    max-width: 300px;
+    background-color: #33363b;
+    border-radius: 5px;
+    padding: 10px;
+   }
+   
+   .display {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    margin-bottom: 10px;
+   }
+   
+   .keys {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+   }
+ 
+   button {
+    background-color: #202420;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+   }
+   
+   button:hover {
+    background-color: #405186;
+   }
 
-      
+.equal{
+    color: #274cf1;;
+} 
+.operator{
+    color: #274cf1;
+} 
+.on{
+    color: #2ee6a2;
+}

@@ -1,3 +1,4 @@
-function myDemo(){
-    document.getElementById("demo").innerHTML="This is my first JS"
-    }
+let display = document.getElementById('display');
+
+let buttons = document.getElementsByClassName('button');
+console.log('buttons');

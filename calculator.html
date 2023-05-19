@@ -21,48 +21,34 @@
       
     </ul>
         
-    </nav>
-   <div class="container">
     <div class="calculator">
-        <form >
-            <div class="display"> <input type="text" name="display"> </div>
-            <div>
-                <input type="button" value="AC" class="on"></button>
-                <input type="button" value="%" class="operator"></button>
-                <input type="button" value="←" class="operator"></button>
-                <input type="button" value="/" class="operator"></button>
-            </div>
-            <div>
-                <input type="button" value="7" onclick="display='7'"></button>
-                <input type="button" value="8"></button>
-                <input type="button" value="9"></button>
-                <input type="button" value="*" class="operator"> </button>
-            </div>
-            <div>
-                <input type="button" value="4"></button>
-                <input type="button" value="5"></button>
-                <input type="button" value="6"></button>
-                <input type="button" value="-" class="operator"></button>
-            </div>
-            <div>
-                <input type="button" value="1"></button>
-                <input type="button" value="2"></button>
-                <input type="button" value="3"></button>
-                <input type="button" value="+" class="operator"> </button>
-            </div>
-            <div>
-                <input type="button" value="0"></button>
-                <input type="button" value="."></button>
-                <input type="button" value="=" class="equal"></button>
-
-            </div>
-        </form>
-
-    </div>
-
-
-
-   </div>
-   
+        <div class="display">
+         <p id="result">0</p>
+        </div>
+        <div class="keys">
+         <button onclick="clearResult()" class="on">AC</button>
+         <button onclick="deleteLast()" class="operator">←</button>
+         <button onclick="addInput()" class="operator">%</button>
+         <button onclick="addInput('/')" class="operator">/</button>
+         <button onclick="addInput('7')">7</button>
+         <button onclick="addInput('8')">8</button>
+         <button onclick="addInput('9')">9</button>
+         <button onclick="addInput('*')" class="operator">x</button>
+         <button onclick="addInput('4')">4</button>
+         <button onclick="addInput('5')">5</button>
+         <button onclick="addInput('6')">6</button>
+         <button onclick="addInput('-')" class="operator">-</button>
+         <button onclick="addInput('1')">1</button>
+         <button onclick="addInput('2')">2</button>
+         <button onclick="addInput('3')">3</button>
+         <button onclick="addInput('+')" class="operator">+</button>
+         <button onclick="addInput('00')">00</button>
+         <button onclick="addInput('0')">0</button>
+         <button onclick="addInput('.')">.</button>
+         <button onclick="calculate()" class="equal">=</button>
+        </div>
+       </div>
+       
+       <script src="calculator.js"></script>
 </body>
 </html>
